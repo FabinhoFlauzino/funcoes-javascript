@@ -5,8 +5,11 @@ const meses = [
 ];
 
 function abreviar (mes) {
-  return mes.substr(0,3)
+  return mes.substr(0,3);
 };
 
 const mesesAbreviados = meses.map(abreviar);
-console.log(mesesAbreviados)
+
+mesesAbreviados.forEach(mes => {
+  console.log(mes);
+})
